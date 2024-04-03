@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* General styles */
+
+  * {
+    @apply box-border m-0 p-0;
+  }
+
+  body {
+    @apply font-Hanken lg:flex lg:justify-center;
+  }
+
+  .container__main {
+    @apply lg:flex lg:justify-center lg:mt-32  lg:shadow-2xl lg:w-max lg:rounded-3xl lg:h-[530px];
+  }
+
+  /* Results section styles */
+
+  .container__results {
+    @apply flex flex-col gap-4 bg-gradient-to-b from-bgGradientBlueSlate to-bgGradientBlueRoyal text-white rounded-br-3xl rounded-bl-3xl p-8 text-center lg:rounded-3xl lg:w-80 lg:shadow-2xl;
+  }
+
+  .container__results__title {
+    @apply text-lightLavender font-bold text-lg;
+  }
+
+  .container__results__message {
+    @apply text-2xl my-2 lg:text-3xl lg:font-bold;
+  }
+
+  .container__results__comparison {
+    @apply text-lightLavender mb-5 lg:text-xl;
+  }
+
+  /* Results score styles */
+
+  .container__results__score {
+    @apply bg-gradient-to-b from-bgGradientCircleBlueViolet to-bgGradientCircleBluePersian rounded-full w-40 h-40 self-center p-8 text-center;
+  }
+
+  .container__results__score--big {
+    @apply text-7xl font-bold;
+  }
+
+  /* Summary section styles */
+
+  .container__summary {
+    @apply flex flex-col gap-5 my-4 mx-8 lg:w-72;
+  }
+
+  .container__summary__title {
+    @apply text-darkGrayBlue font-bold text-xl;
+  }
+
+  .container__summary__list {
+    @apply flex flex-col gap-5;
+  }
+
+  .container__summary__list__items {
+    @apply p-4 rounded-xl flex justify-between font-bold;
+  }
+
+  .container__summary__list__items--gray {
+    @apply text-gray-400;
+  }
+
+  /* Reaction styles */
+
+  .container__summary__list__items--reaction {
+    @apply text-reaction;
+  }
+
+  .container__summary__list__items--reaction--bg {
+    @apply bg-reactionBg;
+  }
+
+  /* Memory styles */
+
+  .container__summary__list__items--memory {
+    @apply text-memory;
+  }
+
+  .container__summary__list__items--memory--bg {
+    @apply bg-memoryBg;
+  }
+
+  /* Verbal styles */
+
+  .container__summary__list__items--verbal {
+    @apply text-verbal;
+  }
+
+  .container__summary__list__items--verbal--bg {
+    @apply bg-verbalBg;
+  }
+
+  /* Visual styles */
+
+  .container__summary__list__items--visual {
+    @apply text-visual;
+  }
+
+  .container__summary__list__items--visual--bg {
+    @apply bg-visualBg;
+  }
+
+  .container__summary__list__items--memory,
+  .container__summary__list__items--visual,
+  .container__summary__list__items--reaction,
+  .container__summary__list__items--verbal {
+    @apply flex gap-2;
+  }
+
+  /* Button styles */
+
+  .container__summary__button {
+    @apply bg-darkGrayBlue text-white rounded-3xl py-4;
+  }
+}
